@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #0d0d12;
+    color: #e8e8f0;
+    font-family: "Courier New", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* пиксельный вайб */
+    image-rendering: pixelated;
+  }
+  
+  .game-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px;
+    border: 3px solid #2a2a3a;
+    background: #12121a;
+    box-shadow: 0 0 0 4px #0d0d12, 0 0 30px rgba(80, 80, 255, 0.15);
+  }
+  
+  #board {
+    border: 3px solid #3a3a5a;
+    background: #08080c;
+    display: block;
+  }
+  
+  .side-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 140px;
+  }
+  
+  .avatar {
+    font-size: 56px;
+    text-align: center;
+    background: #1a1a28;
+    border: 3px solid #3a3a5a;
+    padding: 10px;
+    transition: transform 0.15s;
+  }
+  
+  .player-name {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #9b9bff;
+  }
+  
+  .stat {
+    display: flex;
+    justify-content: space-between;
+    background: #1a1a28;
+    border: 2px solid #2a2a3a;
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  
+  .stat-label { color: #8a8aa0; }
+  .stat-value { color: #ffffff; font-weight: bold; }
+  
+  .next-label {
+    text-align: center;
+    font-size: 13px;
+    color: #8a8aa0;
+    letter-spacing: 1px;
+  }
+  
+  #next {
+    border: 2px solid #2a2a3a;
+    background: #08080c;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .controls-hint {
+    font-size: 12px;
+    line-height: 1.8;
+    color: #6a6a85;
+    border-top: 2px dashed #2a2a3a;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
